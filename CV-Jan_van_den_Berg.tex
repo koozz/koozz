@@ -1,0 +1,278 @@
+%
+% Curriculum Vitae - Jan van den Berg
+% Locally installed package: texlive-full
+%
+\documentclass[11pt,a4paper]{article}
+
+% Imports (for styling)
+\usepackage[NoDate]{currvita}
+% \usepackage{fancyhdr}
+\usepackage[scale=0.80]{geometry}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Configure header and footer
+\pagestyle{plain}
+
+% Configure hyperlinks etc.
+\hypersetup{
+	colorlinks=true,
+	pdfauthor={Jan van den Berg},
+	pdfpagemode=FullScreen,
+	pdfstartpage=1,
+	pdftitle={Curriculum Vitae - Jan van den Berg},
+	urlcolor=blue,
+}
+
+% Section restyling
+\titleformat{\section}
+	{\bfseries\uppercase}
+	{}
+	{0em}
+	{}[\titlerule]
+
+% Title restyling
+\renewcommand{\maketitle}{
+	\begin{center}
+	{\huge\bfseries\theauthor}
+
+	\vspace{.25em}
+	\href{mailto:linkedin@koozz.nl}{linkedin@koozz.nl}
+	\end{center}
+}
+
+% CV restyling
+\renewcommand*{\cvlistheadingfont}{
+	\bfseries
+}
+
+\renewcommand*{\cvlabelfont}{
+	\itshape
+}
+
+% Define label with by longest label
+\AtBeginDocument{
+	\settowidth{\cvlabelwidth}{
+		\cvlabelfont 01/2020–01/2020
+	}
+}
+
+% Basic variables
+\title{Curriculum Vitae}
+\author{Jan van den Berg}
+
+% Document data
+\begin{document}
+\maketitle
+\begin{cv}{}
+	\section{Profile}
+	My name is Jan, I was born in '83 and started playing around with computers
+	as soon as we got an Amstrad CPC. I have been scripting ever since I was a
+	little kid, this evolved into software development at a later stage.
+
+	My professional career started in 2001 as a Webmaster, switched in 2003 to
+	Network Services Administrator, switched again in 2007 to Software Developer
+	where I worked on numerous JVM based projects. The most recent switch has
+	been in 2020 towards the role of Site Reliability Engineer.
+	
+	At home I enjoy spending time with my wife, son and daughter, watching series
+	and movies, listening to music and playing games on the computer.
+
+	I'm a	quick learner, especially on IT matters and I'm always busy keeping my
+	knowledge up-to-date, experiencing with other programming languages and
+	picking up topics like Machine Learning and Deep Learning.
+
+	\vspace{.5em}
+
+	\begin{cvlist}{Certification}
+		\item[08/2016] Coursera: Machine Learning.
+		\item[05/2010] Scrum Alliance: Certified Scrum Master (CSM).
+		\item[09/2009] Sun Certified Java Developer (SCJD).
+		\item[11/2008] Sun Certified Business Component Developer (SCBCD).
+		\item[04/2008] Sun Certified Java Programmer (SCJP).
+	\end{cvlist}
+
+	\vspace{.5em}
+
+	\begin{cvlist}{Education}
+		\item[2003--2007] \textbf{HBO Informatica}, \textit{The Hague University},
+		Bachelor of ICT
+		\item[1999--2003] \textbf{MBO Technische Informatica}, \textit{ROC
+		Utrecht}, ing.
+	\end{cvlist}
+
+	\vspace{.5em}
+
+	\begin{cvlist}{IT skills}
+		\item[Languages] BASH, C, C++, Clojure, Elm, Go, Haskell, Java, JavaScript,
+		Kotlin, Perl, PHP, Python, Rust, Scala.
+		\item[Frameworks] Angular, Hibernate, MyBatis, Spring, SpringBoot, Vue.
+		\item[Tooling] Ansible, Docker, Git, GitHub Actions, GitLab, Gradle,
+		Jenkins, Kubernetes, Make, Maven, Terraform, Vim.
+		\item[Cloud] Amazon Web Services(AWS), Google Cloud Platform(GCP),
+		Microsoft Azure.
+		\item[Datastores] Cassandra, MongoDB, MSSQL, MySQL, Oracle, PostgreSQL,
+		Redis.
+		\item[Markup] AsciiDoc, CSS, HTML, JSON, {\LaTeX}, MarkDown, TOML, XML, YAML.
+		\item[Office] LibreOffice, Microsoft Office365 (Excel, Powerpoint, Teams, Word).
+		\item[Operating System] Linux (Alpine, Arch, CentOS, Debian, Manjaro,
+		NixOS, Ubuntu, Redhat), Mac OSX, Microsoft Windows.
+	\end{cvlist}
+
+	\newpage
+
+	\section{Experience}
+
+	\begin{cvlist}{Site Reliability Engineer at Ahold Delhaize}
+		\item[07/2020--Present] Currently working at Ahold Delhaize as a Site
+		Reliability Engineer.
+	\end{cvlist}
+
+	\begin{cvlist}{DevOps engineer at Oelan (consultancy)}
+		\item[09/2019--06/2020] As a \textbf{DevOps engineer}, I have worked on an
+		internal CV tool as well as working for one of their customers.
+		\item[\color{gray}11/2019--05/2020] At \textbf{Yolt}, I developed bank
+		connections according to PSD2 standard in a highly secured environment with
+		microservices and mTLS running on Amazon Web Services (AWS). To communicate
+		with other services I wrote Kafka Listeners and Senders and stored the
+		service's own data in Cassandra.
+	\end{cvlist}
+
+	\begin{cvlist}{DevOps engineer at Webenable}
+		\item[09/2018--08/2019] As a \textbf{DevOps engineer}, I worked on multiple
+		customer projects.
+		
+		For \textbf{Mi8.marketing}, I adopted the software from the previous owner,
+		I migrated the applications and database onto the Google Cloud Platform, I
+		added a freemium signup, cleaned up the codebase, improved MailChimp
+		support and migrated more components to docker containers.
+
+		For \textbf{ClockOnline}, I managed the application on the Google Cloud
+		Platform. Applied fixed and software patches by their developers and
+		improved the overal platform stability.
+
+		For \textbf{Pleasurements}, I worked on the PostNL delivery interface. I
+		also improved the generic message consumer used in this project to handle
+		ten times the amount of messages than it did before.
+
+		For \textbf{HouthandelOnline}, I worked on the initial setup of the Content
+		Management System (CMS) and used Google Cloud Functions (Golang) to parse
+		and process Excel data and import that into the CMS.
+
+		For \textbf{MijnAutomatten.nl}, I worked on the license plate check to
+		convert from license plate into the model, brand and year of your car.
+	\end{cvlist}
+
+	\begin{cvlist}{Senior software engineer at Conspect (consultancy)}
+		\item[09/2013--08/2018] As a \textbf{Senior software engineer}, I worked on
+		projects for Albert Heijn and Powerhouse and shared knowledge during our
+		periodic 'pizza-sessions'.
+		\item[\color{gray}08/2017--08/2018] At \textbf{Albert Heijn Labs}, I used
+		the LEAN startup methodology to quickly select, test, develop and validate
+		new innovations with my team of interns. We developed a chatbot that helps
+		in your choice of wine, we made a realtime synchronized grocery list, we
+		created a "buy button" for affiliates sites and we built an IF This Then
+		That (IFTTT) integration.
+		\item[\color{gray}06/2015--07/2017] At \textbf{Albert Heijn}, I
+		maintenained and improved the Albert Heijn webshop.
+		\item[\color{gray}02/2015--05/2015] At \textbf{Powerhouse}, I learned to
+		write performing database queries and expose the data over REST for
+		ingestion by the AngularJS front-end.
+		\item[\color{gray}09/2013--01/2015] At \textbf{Albert Heijn}, I worked on
+		various parts of the Appie web project (product cards, bonus page, search).
+	\end{cvlist}
+
+	\begin{cvlist}{Software engineer at Mirabeau}
+		\item[02/2012--08/2013] As a \textbf{Software engineer}, I worked on
+		several projects to make our customers successful online.
+
+		For \textbf{Maxeda}, I reimplemented their Praxis (DIY) e-commerce webshop
+		with hybris.
+
+		For \textbf{Kadaster}, I reimplemented the website by incorporating
+		carefully designed and crafted frontend snippets into building blocks of
+		the GX software Content Management System (CMS). Using GX's Lucene search
+		engine, I implemented a 'related articles' component.
+
+		For \textbf{MarktMonitor}, I worked on their flagship tool 'Skillskompas'
+		which was built using the Google Webkit Toolbox (GWT).
+	\end{cvlist}
+
+	\begin{cvlist}{Java developer at InterAccess (consultancy)}
+		\item[05/2011--01/2012] As a \textbf{Java developer}, I worked on a few
+		in-house projects.
+		\item[\color{gray}01/2012--01/2012] At \textbf{Xebia}, I worked closely
+		with their employees to transfer knowledge and ownership of the 'Landelijk
+		Asbest Volg Systeem' (LAVS) project.
+		\item[\color{gray}05/2011--12/2011] For the \textbf{Municipality of
+		Oosterhout}, I worked on the Java Enterprise application WebNext which
+		helps municipalities serve their civilians.
+	\end{cvlist}
+
+	\begin{cvlist}{Java developer at SDL Tridion}
+		\item[09/2009--04/2011] As a \textbf{Java developer}, I was able to work in
+		a product company where they applied Scrum. I started at Tridion by moving
+		the whole Content Delivery codebase to Maven, hereby making it easier to
+		modify or add a module to the codebase. Next, I replaced the proprietary
+		logging framework with a well-known and proven third-party logging
+		framework which increased performance significantly. I migrated tests from
+		JUnit 3 to JUnit 4. This contributed to easy configuration of the
+		Continuous Integration server and being able to show code quality metrics
+		by using Sonar.
+
+		While being the Certified Scrum Master for the Content Delivery team, I
+		still contributed a lot of my time to development of the Content Delivery
+		stack (transporting, deploying, storing, retrieving and rendering content).
+		It was an interesting mix of challenging code (concurrency, JPA,
+		transactions) and techniques (REST, OData, OAuth).
+	\end{cvlist}
+
+	\begin{cvlist}{Java developer at Pecoma Business Technology (consultancy)}
+		\item[11/2007--08/2009] As a \textbf{Java developer}, I have done a few
+		projects, as well in-house as subcontracting. I have received training and
+		certificates in Java, social skills and project management.
+		\item[\color{gray}12/2008--06/2009] At \textbf{De Nederlandse Bank (DNB) /
+		Dutch Central Bank}, I added new features to a Struts-based web application
+		and its Spring-Hibernate backend, converting XLS to XML, sending JMS
+		messages, parsing XML (SAX), persisting objects, mapping object
+		relationships. Next to that I migrated the codebase from ClearCase and
+		CruiseControl to Subversion and Maven.
+		\item[\color{gray}09/2008--11/2008] At \textbf{Blue Billywig}, I supported
+		a Junior Java developer on an Out-of-Memory exception and several design
+		choices. I helped developing the MediaStore product in Java.
+		\item[\color{gray}08/2008--08/2008] For \textbf{Yellowbrick}, I added new
+		features to the Java webapplication, adjusted the Oracle database, made
+		minor changes to the C\#.NET application and built a release (application,
+		Oracle scripts, manual).
+		\item[\color{gray}05/2008--07/2008] At \textbf{Onetrail}, I worked with
+		JCAPs and wrote Java Collaboration Definitions (JCD's) to translate
+		customer order-information to the internal standard and vice-versa to
+		connect the customer to a service bus. Furthermore, I added a generic
+		logging facility, extracted data from PDF and XLS.
+		\item[\color{gray}01/2008--04/2008] At the \textbf{Municipality of
+		Haarlemmermeer}, I automated front-office workflow processes in the COSA
+		BPM Suite (processes like birth-registration) to assist the front-office in
+		handling all possible flows in these cases.
+	\end{cvlist}
+
+	\begin{cvlist}{Network Services Adminstrator at ING}
+		\item[02/2004--10/2007] As a \textbf{Network Services Adminstrator}, I
+		maintained ING’s global network services such as DNS, automated the daily
+		maintenance (due to network changes) with Shell Scripting and Perl and
+		participated in projects (Prince2).
+		\item[09/2003--01/2004] As a \textbf{Network Specialist}, I configured
+		Cisco switches and routers according to the network designs and learned a
+		lot about the network infrastructure of the ING.
+	\end{cvlist}
+
+	\begin{cvlist}{Webmaster at M.S.O.}
+		\item[09/2001--08/2003] As a \textbf{Webmaster}, I restructured the website
+		with CSS, rebuilt the partner-login site to be dynamic and built an
+		intranet site with a self-service content management system using PHP and
+		MySQL.
+	\end{cvlist}
+
+\end{cv}
+\end{document}
