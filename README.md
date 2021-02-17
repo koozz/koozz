@@ -1,6 +1,5 @@
-Hi, I am Jan.
-
-This is my user manual.
+My user manual
+==============
 
 My style
 --------
