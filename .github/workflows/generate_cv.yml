@@ -1,7 +1,10 @@
 name: Generate CV
 on:
   push:
-    branches: [ master ]
+    branches:
+      - main
+    paths:
+      - '*.tex'
 
 jobs:
   build:
