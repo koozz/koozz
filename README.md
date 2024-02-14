@@ -1,5 +1,8 @@
-Automating stuff my whole life, professionally since 2001. Got married, have two
-kids, enjoy gaming and watching TV. The things I value online:
+Automating stuff my whole life, professionally since 2001.
+
+Got married, have two kids, enjoy gaming and watching TV.
+
+The things I value online:
 
 * [Inclusivity](https://training.linuxfoundation.org/training/inclusive-speaker-orientation/)
 in presentations, messaging and other communications.
