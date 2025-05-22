@@ -10,3 +10,10 @@ in presentations, messaging and other communications.
 ([netiquette](https://en.wikipedia.org/wiki/Etiquette_in_technology)).
 * [Open and direct](https://nohello.net) communication
 [BLUF (bottom line up front)](https://en.wikipedia.org/wiki/BLUF_(communication))-style.
+
+Preferred communication method:
+
+|                   | **Urgent**        | **Not urgent**  |
+|-------------------|-------------------|-----------------|
+| **Important**     | Call or in-person | E-mail          |
+| **Not important** | Instant Message   | Instant Message |
